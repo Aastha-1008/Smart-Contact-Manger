@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}">
+
+<head>
+    <title>Home</title>
+</head>
+
+<body class="dark:bg-gray-900 dark:text-white">
+    <div id="content">
+        <h1>Welcome to home page</h1>
+        <div class="bg-white text-black dark:bg-gray-900 dark:text-white p-6">
+            If dark mode is working, this background should be dark and text white.
+        </div>
+    </div>
+
+    <script>
+        console.log("home");
+    </script>
+</body>
+
+</html>
