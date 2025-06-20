@@ -1,12 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title data-th-text="${loggedInUser.name}+' | SCM '">Dashboard</title>
 </head>
-<body>
-    <h1>This is user dashboard</h1>
-    <a data-th-href="@{'/do-logout'}">Logout</a>
+
+<body class="dark:bg-gray-900 dark:text-white">
+
+
+    <div id="content" >
+        
+
+    <div th:if="${loggedInUser}">
+        <div data-th-replace="~{user/sidebar :: sidebar}"></div>
+    </div>
+
+        <div class="spacingLeft" style="padding-top: 8rem;">
+            <h1>Welcome to Dashboard page</h1>
+            <div class="bg-white text-black dark:bg-gray-900 dark:text-white p-6">
+                If dark mode is working, this background should be dark and text white.
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        console.log("this is dashboard page");
+    </script>
 </body>
+
 </html>

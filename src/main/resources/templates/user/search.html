@@ -2,7 +2,7 @@
 <html lang="en" th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}">
 
 <head>
-    <title data-th-text="${loggedInUser.name}+' | SCM '">Profile</title>
+    <title data-th-text="${loggedInUser.name}+' | SCM '">Dashboard</title>
 </head>
 
 <body class="dark:bg-gray-900 dark:text-white">
@@ -16,7 +16,7 @@
     </div>
 
         <div class="spacingLeft" style="padding-top: 8rem;">
-            <h1>Welcome to Profile page</h1>
+            <h1>Welcome to search page</h1>
             <div class="bg-white text-black dark:bg-gray-900 dark:text-white p-6">
                 If dark mode is working, this background should be dark and text white.
             </div>
@@ -25,7 +25,7 @@
     </div>
 
     <script>
-        console.log("this is profile page");
+        console.log("this is dashboard page");
     </script>
 </body>
 

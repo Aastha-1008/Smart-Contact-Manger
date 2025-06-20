@@ -1,18 +1,29 @@
-.login-with-google-btn{
-    &:active{
+.login-with-google-btn {
+    &:active {
         background-color: #eeeeee;
 
     }
 
-    &:focus{
+    &:focus {
         outline: none;
-        box-shadow: 0 -1px 0 rgba(0,0,0,0.04), 0 2px 4px rgba(0,0,0,0.04), 0 0 0 3px #c8dafc;
+        box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.04), 0 0 0 3px #c8dafc;
     }
 
-    &:disabled{
+    &:disabled {
         filter: grayscale(100%);
         background-color: #ebebeb;
-        box-shadow: 0 -1px 0 rgba(0,0,0,0.04), 0 2px 4px rgba(0,0,0,0.04), 0 0 0 3px #c8dafc;
+        box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.04), 0 0 0 3px #c8dafc;
         cursor: not-allowed;
+    }
+}
+
+
+.spacingLeft {
+    padding-left: 16rem;
+}
+
+@media screen and (max-width: 630px) {
+    .spacingLeft {
+        padding-left: 0rem;
     }
 }

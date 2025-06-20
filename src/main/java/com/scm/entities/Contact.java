@@ -25,7 +25,7 @@ public class Contact {
     private String email;
     private String phoneNumber;
     private String address;
-    private String picture;
+    private String profileImage;
 
     @Column(length = 1000)
     private String description;
@@ -33,6 +33,8 @@ public class Contact {
 
     private String WebsiteLink;
     private String LinkedInLink;
+
+    private String cloudinaryImagePublicId;
     // private List<SocialLink> socialLink = new ArrayList<>();
 
 
